@@ -30,5 +30,5 @@ We also include the color that corresponds to each host.
 |-----------|------------|---------|
 |  JA108    |  Urochloa  | yellow4 |
 
-## Import the three datafiles into RStudio for plotting using the ggtree program
+## 6. Import the three datafiles into RStudio for plotting using the ggtree program
 
