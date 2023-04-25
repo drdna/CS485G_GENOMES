@@ -15,7 +15,10 @@ RepeatColors <- scale_color_gradientn(colours = rainbow(7))
 Hosts <- c("Cyperus", "Digitaria", "Eleusine", "Leersia", "Panicum", "Pennisetum", "Triticum", "Urochloa", "Zingiber")
 
 #specify colors for repeats
-repeats <- c("MAGGY", "MGL", "MGLR_3", "Pot.", "RETRO5", "RETRO6..", "Pyret1") 
+repeats <- c("MAGGY", "MGL", "MGLR_3", "Pot.", "RETRO5", "RETRO6..", "Pyret1")
+
+repeats <- gsub("Pot.", "Pot2/4", repeats)
+repeats <- gsub("RETRO6..", "RETRO6", repeats)
   
 # read in tree file
 Tree <- read.tree("~/Pyricularia.nwk")
@@ -33,6 +36,9 @@ df_ring_heatmap <- read.table("repeats.heatmap.txt", na.strings = "NA")
 
 # add column names to repeat dataframe
 colnames(df_ring_heatmap) = c("strain", "Repeats", "Density")
+
+df_ring_heatmap$Repeats <- gsub("Pot.", "Pot2/4", df_ring_heatmap$Repeats)
+df_ring_heatmap$Repeats <- gsub("RETRO6..", "RETRO6", df_ring_heatmap$Repeats)
 
 # factorize by repeat category
 df_ring_heatmap$Repeats <- factor(df_ring_heatmap$Repeats, levels = Repeats)
