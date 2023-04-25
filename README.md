@@ -37,5 +37,5 @@ The metadata table is named: [CS485G.txt](/CS485G.txt)
 
 ## 6. Import the three datafiles into RStudio for plotting using the ggtree program
 The specific code used to generate the plots is named [CS485G_Tree.R](/CS485G_Tree.R) and will produce the following tree:
-![PyriculariaRepeatsTree.pdf](/PyriculariaRepeatsTree.pdf)
+![PyriculariaRepeatsTree.png](/PyriculariaRepeatsTree.png)
 
