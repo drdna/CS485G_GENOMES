@@ -1,6 +1,6 @@
 # Analyzing the content of known repeats within "MyGenome Project" assemblies
 
-## 1. Use the MEGAX program to build a tree based on the genetic distances between isolates
+## 1. Use the MEGA-X program to build a tree based on the genetic distances between isolates
 
 ## 2. Export the tree as a text file:
 ```bash
