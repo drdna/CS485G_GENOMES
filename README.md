@@ -12,8 +12,13 @@ awk -F '.' '{print $2}'`; do i=0; grep "$f\b" MoRepeats.$g.BLAST | \
 awk -v var="$f" -v var2="$g" '{i+=$4} END {print var2, "\t", var, "\t", i}'; done; done |\
 awk '{if(NF==2) {print $1, "\t", $2, "\t", 0} else {print $0}}' > repeats.heatmap.txt
 ```
+This creates a dataframe with the following format:
+| Genome ID | Repeat ID | Repeat Density |
+|-----------|------------|---------------|
+|  JA108    |  Urochloa  |    13214      |
+
 ## 3. Create a metadata table that lists for each genome the following:
-| Genome ID | Host Plant | Repeat Density |
-|-----------|------------|----------------|
-|           |            |                |
+| Genome ID | Host Plant |  Color  |
+|-----------|------------|---------|
+|  JA108    |  Urochloa  | yellow4 |
 
