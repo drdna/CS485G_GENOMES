@@ -13,4 +13,6 @@ awk -v var="$f" -v var2="$g" '{i+=$4} END {print var2, "\t", var, "\t", i}'; don
 awk '{if(NF==2) {print $1, "\t", $2, "\t", 0} else {print $0}}' > repeats.heatmap.txt
 ```
 ## 3. Create a metadata table that lists for each genome the following:
-|Genome ID|Host Plant|Repeat Density| 
+| Genome ID | Host Plant | Repeat Density |   |   |
+|-----------|------------|----------------|---|---|
+|           |            |                |   |   |
